@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login page</title>
+
+<script type="text/javascript">
+    function myFunction() {
+    	  var x = document.getElementById("myInput");
+    	  if (x.type === "password") {
+    	    x.type = "text";
+    	  } else {
+    	    x.type = "password";
+    	  }
+    	  var x = document.getElementById("myInput1");
+    	  if (x.type === "password") {
+    	    x.type = "text";
+    	  } else {
+    	    x.type = "password";
+    	  }
+    	}
+    </script>
+<style>
+      input::-ms-reveal,
+      input::-ms-clear {
+        display: none;
+      }
+    </style>
+    </head>
+
+
+</head>
+<body>
+
+<form  method=post>
+
+
+<input type="image" src="sbi logo.jpg" alt="SBI" width="200" height="150" align="left">
+<br>
+
+
+
+<h1 > WELCOME TO ONLINE BANKING!!</h1>
+
+      <h1>LOG IN</h1><br><br>
+      <label  >User name</label>
+      <input  type="email" name="email" value="" placeholder="Enter Email"  >
+     
+      <label >Password</label>
+      
+      <input  type="password" name="password" value=""  id="myInput" placeholder="Enter Password">
+       
+    <label style="font-size: 15px;  
+    margin-left: 10%;
+    opacity: 1.0;"> <input  type="checkbox"  onclick="myFunction()">  Show Password</label> 
+      <br>
+      <button  type="submit" formaction="process.jsp" >Sign in</button>
+     
+      <button  type="submit" formaction="register.jsp" >Sign up</button>
+    
+  </form>  
+
+
+
+
+
+
+</body>
+</html>
+
